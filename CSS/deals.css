@@ -141,6 +141,8 @@ main {
   flex-direction: column;
   cursor: pointer;
   transition: 0.4s;
+  height: 484px;
+  width: 286px;
 }
 .deal-wrapper:hover {
   transform: scale(1.05);
@@ -161,6 +163,7 @@ main {
 }
 .deal-wrapper button:hover {
   background-color: rgba(96, 158, 41, 0.9);
+  box-shadow: rgba(96, 158, 41, 0.9) 0px 0px 5px 2px;
 }
 .deal-wrapper img {
   width: 246px;
@@ -186,4 +189,32 @@ main {
   text-align: center;
   overflow: scroll;
   overflow-x: hidden;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.upper-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.upper-footer a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.lower-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.lower-footer i,
+.lower-footer a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
 }

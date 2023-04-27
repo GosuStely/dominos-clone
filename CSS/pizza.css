@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.logo {
+  width: 250px;
+  height: 70px;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+}
+nav a i {
+  font-size: 1.25;
+  margin-right: 0.5rem;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+.languages {
+  font-size: 1.25rem;
+}
+.languages button {
+  border: none;
+  background-color: transparent;
+  font-weight: 800px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.menu {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.order {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  background-color: #df223d;
+  letter-spacing: 1px;
+  border: none;
+  color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 1px 0.1px black;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.order:hover {
+  transform: translateY(-2px);
+}
+main {
+  margin-top: 5rem;
+  background-image: url(/imges/background.jpg);
+  padding-bottom: 165rem;
+}
+.type-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 10px;
+  background-color: rgba(111, 64, 9, 0.4);
+  height: 122px;
+}
+#deals {
+  background-color: #be1e2d;
+}
+.option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border: 3px solid transparent;
+  text-decoration: none;
+}
+
+.option:hover {
+  border: 3px solid white;
+}
+
+.pointer {
+  z-index: 1;
+  position: absolute;
+  bottom: -10px;
+  left: 24px;
+  border: 3px solid white;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  background-image: url(/imges/background.jpg);
+}
+#selected {
+  border: 3px solid white;
+  background-image: url(/imges/background.jpg);
+}
+.option img {
+  width: 50px;
+  display: flex;
+  align-self: center;
+}
+.option span {
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.special-deals-container {
+  height: 1000px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 2rem;
+  margin: 2rem 10rem;
+}
+.deal-wrapper {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.4s;
+  height: 484px;
+  width: 286px;
+}
+.deal-wrapper:hover {
+  transform: scale(1.05);
+}
+.deal-wrapper button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  border-radius: 0rem 0rem 1rem 1rem;
+  border: none;
+  background-color: #609e29;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.deal-wrapper button:hover {
+  background-color: rgba(96, 158, 41, 0.9);
+  box-shadow: rgba(96, 158, 41, 0.9) 0px 0px 5px 2px;
+}
+.deal-wrapper img {
+  width: 186px;
+  height: 120px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.deal-wrapper h4 {
+  width: 246px;
+  height: 100px;
+  margin-top: 1rem;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(55, 110, 212);
+}
+.deal-wrapper p {
+  width: 246px;
+  height: 100px;
+  margin-top: 1rem;
+  text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.upper-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.upper-footer a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.lower-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.lower-footer i,
+.lower-footer a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
+}
