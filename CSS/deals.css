@@ -46,6 +46,9 @@ nav div {
   font-size: 1.25rem;
   cursor: pointer;
 }
+.languages button:hover {
+  color: blue;
+}
 .menu {
   font-size: 1.25rem;
   cursor: pointer;
@@ -205,6 +208,11 @@ footer {
   color: gray;
   font-weight: 600;
   text-transform: uppercase;
+}
+.upper-footer a:hover,
+.lower-footer a:hover,
+.lower-footer a i:hover {
+  color: black;
 }
 .lower-footer {
   margin-top: 1rem;
