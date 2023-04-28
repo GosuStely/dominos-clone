@@ -75,7 +75,7 @@
           <h4>Large with 2x beer</h4>
           <p>
             Get your favourite large pizza + a choice of chicken starter + 2x
-            Shumensko 0.5l only for 22.90 BGN! *+* for Mozzarella and Pepperoni
+            Shumensko 0.5l only for 22.90 BGN! + for Mozzarella and Pepperoni
             and Philadelphia stuffed crust there is an extra charge
           </p>
           <button>Choose</button>
@@ -85,7 +85,7 @@
           <h4>Combo Carlsberg</h4>
           <p>
             Get your favourite large pizza + chicken starter + 2pcs. Carlsberg
-            can 0.5l for 24.10 BGN * +2.50 BGN extra for Philadelphia crust
+            can 0.5l for 24.10 BGN +2.50 BGN extra for Philadelphia crust
           </p>
           <button>Choose</button>
         </div>
@@ -155,22 +155,6 @@
       </div>
       <div class="rights">© 2023 Domino's Pizza. All Rights Reserved</div>
     </footer>
-    <script>
-      let buttonElements = document.getElementsByTagName('button');
-      let itemCountElement = document.getElementById('item-count');
-      let cartDivElement = document.getElementsByClassName('cart-div')[0];
-
-      let items = 0;
-
-      for (let index = 0; index < buttonElements.length; index++) {
-        buttonElements[index].addEventListener('click', addToCart);
-      }
-      function addToCart() {
-        items++;
-        itemCountElement.innerHTML = items;
-        itemCountElement.style.visibility = 'visible';
-        cartDivElement.id = 'shake-element';
-      }
-    </script>
+    <script src="/javascript/cart.js"></script>
   </body>
 </html>

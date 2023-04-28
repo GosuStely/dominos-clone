@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@keyframes shakeCart {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg) scale(1.2);
+  }
+  80% {
+    transform: rotate(10deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(10deg) scale(1);
+  }
+  50% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(10deg) scale(1);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -50,6 +76,33 @@ nav div {
   font-size: 1.25rem;
   cursor: pointer;
 }
+.cart-div {
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cart-div i {
+  font-size: 2.5rem;
+  color: rgb(7, 136, 187);
+}
+.cart-div:hover {
+  transform: scale(1.2);
+}
+.cart-div span {
+  border: 1px solid red;
+  border-radius: 2rem;
+  background-color: #df223d;
+  font-size: 0.75rem;
+  position: absolute;
+  padding: 0px 4px;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  color: #fff;
+}
+.shake-element {
+  animation: shakeCart 500ms ease-in-out forwards;
+}
 .order {
   padding: 0.25rem 0.5rem;
   font-size: 1.25rem;
@@ -92,10 +145,11 @@ main {
   margin: 0 1rem;
   border: 3px solid transparent;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .option:hover {
-  border: 3px solid white;
+  animation: shake 500ms ease-in-out forwards infinite;
 }
 
 .pointer {
