@@ -23,6 +23,10 @@
         <div class="languages"><button>BG</button>|<button>EN</button></div>
         <div class="menu">Menu</div>
         <button class="order">Order now</button>
+        <div class="cart-div">
+          <i class="bx bxs-cart"></i>
+          <span id="item-count">1</span>
+        </div>
       </nav>
     </header>
     <main>
@@ -151,5 +155,22 @@
       </div>
       <div class="rights">© 2023 Domino's Pizza. All Rights Reserved</div>
     </footer>
+    <script>
+      let buttonElements = document.getElementsByTagName('button');
+      let itemCountElement = document.getElementById('item-count');
+      let cartDivElement = document.getElementsByClassName('cart-div')[0];
+
+      let items = 0;
+
+      for (let index = 0; index < buttonElements.length; index++) {
+        buttonElements[index].addEventListener('click', addToCart);
+      }
+      function addToCart() {
+        items++;
+        itemCountElement.innerHTML = items;
+        itemCountElement.style.visibility = 'visible';
+        cartDivElement.id = 'shake-element';
+      }
+    </script>
   </body>
 </html>
