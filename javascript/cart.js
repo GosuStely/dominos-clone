@@ -12,6 +12,10 @@ function addToCart() {
   items++;
   itemCountElement.innerHTML = items;
   itemCountElement.style.visibility = 'visible';
+  // cartDivElement.classList.add('shake-element');
+  // setTimeout(() => {
+  //   cartDivElement.classList.remove('shake-element');
+  // }, 500);
   cartDivElement.classList.remove('shake-element');
   void cartDivElement.offsetWidth;
   cartDivElement.classList.add('shake-element');
