@@ -215,3 +215,6 @@ footer {
   text-decoration: none;
   color: gray;
 }
+.lower-footer a:hover > i {
+  color: black;
+}
